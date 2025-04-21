@@ -1,0 +1,24 @@
+{
+  "name": "uptask-php-mvc-sass",
+  "version": "1.0.0",
+  "description": "UpTask - Curso Desarrollo web Completo",
+  "author": "Juan De la torre @codigoconjuan",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.75.0"
+  },
+  "dependencies": {
+    "glob": "^11.0.1",
+    "sharp": "^0.34.0"
+  }
+}
