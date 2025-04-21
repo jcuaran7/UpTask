@@ -32,6 +32,7 @@ class TareaController {
         if($_SERVER['REQUEST_METHOD']==='POST') {
 
             session_start();
+            isAuth();
 
             $proyectoId = $_POST['proyectoId'];
 
@@ -69,6 +70,7 @@ class TareaController {
             $proyecto = Proyecto::where('url', $_POST['proyectoId']);
 
             session_start();
+            isAuth();
 
             if(!$proyecto || $proyecto->propietarioId !== $_SESSION['id']) {
                 $respuesta = [
@@ -104,6 +106,7 @@ class TareaController {
             $proyecto = Proyecto::where('url', $_POST['proyectoId']);
 
             session_start();
+            isAuth();
 
             if(!$proyecto || $proyecto->propietarioId !== $_SESSION['id']) {
                 $respuesta = [
